@@ -11,7 +11,7 @@ FEATURE_HEADERS = ['SepalLengthCm', 'SepalWidthCm', 'PetalLengthCm', 'PetalWidth
 TARGET_HEADERS = ['Species']
 
 # Reading Data
-dataset = pd.read_csv('iris.csv')
+dataset = pd.read_csv('../../../datasets/iris.csv')
 
 features = dataset[FEATURE_HEADERS]
 print('Features\n', features.head(5))

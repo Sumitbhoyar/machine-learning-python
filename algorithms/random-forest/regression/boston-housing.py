@@ -13,18 +13,6 @@ FEATURE_HEADERS = ['CRIM', 'ZN', 'INDUS', 'CHAS', 'NOX', 'RM', 'AGE', 'DIS', 'RA
 
 TARGET_HEADERS = ['MEDV']
 
-# # Read in the file
-# with open('boston-housing_back.csv', 'r') as file :
-#   filedata = file.read()
-#
-# # Replace the target string
-# filedata = filedata.replace('   ', ' ')
-# filedata = filedata.replace('  ', ' ')
-#
-# # Write the file out again
-# with open('boston-housing.csv', 'w') as file:
-#   file.write(filedata)
-
 # Reading Data
 dataset = pd.read_csv('../../../datasets/boston-housing.csv', delimiter=' * \s*', engine='python' )
 

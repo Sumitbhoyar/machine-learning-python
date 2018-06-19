@@ -13,7 +13,7 @@ FEATURE_HEADERS = ['Variance', 'Skewness', 'Curtosis', 'Entropy']
 TARGET_HEADERS = ['Class']
 
 # Reading Data
-dataset = pd.read_csv('bill_authentication.csv')
+dataset = pd.read_csv('../../../datasets/bill_authentication.csv')
 
 features = dataset[FEATURE_HEADERS]
 print('Features\n', features.head(5))

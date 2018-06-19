@@ -22,7 +22,7 @@ TARGET_HEADERS = ['income']
 ALL_HEADERS = FEATURE_HEADERS + TARGET_HEADERS
 HEADERS_WITH_QUESTION_MARK = ['workclass', 'occupation', 'native_country']
 # Reading Data
-dataset = pd.read_csv('income-range.data',
+dataset = pd.read_csv('../../datasets/income-range.data',
                       header=None, delimiter=' *, *', engine='python')
 
 dataset.columns = ALL_HEADERS

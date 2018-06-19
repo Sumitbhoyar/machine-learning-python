@@ -10,7 +10,7 @@ FEATURE_HEADERS = ['ClumpThickness','UniformityCellSize','UniformityCellShape','
 TARGET_HEADERS = ['CancerType']
 
 # Reading Data
-dataset = pd.read_csv('breast-cancer.csv')
+dataset = pd.read_csv('../../../datasets/breast-cancer.csv')
 print('Before\n', dataset.shape)
 dataset = dataset[dataset['BareNuclei'] != '?']
 print('After\n', dataset.shape)
